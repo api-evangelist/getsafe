@@ -1,8 +1,27 @@
 aid: getsafe
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/getsafe.png
 name: Getsafe
-description: 'Getsafe is a company surfaced as a portfolio company of earlybird, partech and added to
-  the API Evangelist network as a stub for enrichment. Sector: insurtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Getsafe (Getsafe Digital GmbH) is a Heidelberg, Germany-based digital insurance company (insurtech)
+  that lets consumers buy, manage, and file claims for insurance entirely through a mobile app. Getsafe
+  operates as a licensed insurance carrier and offers 15+ products across liability and legal protection,
+  health (public, private, dental, and travel), living (contents and drone), pet (pet health and dog
+  liability), and protection and finance (income protection, term life, private pension, and children's
+  savings). It serves 500k+ customers in Germany and Austria with English-language, app-based support.
+  In 2018 Getsafe launched an early-access P&C and health insurance API and embeddable widget for partner
+  distribution; that partner API is no longer offered as a public self-service developer program, so this
+  profile is maintained as a company record. Backed by earlybird and partech.
 url: https://raw.githubusercontent.com/api-evangelist/getsafe/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Insurtech
+- Insurance
+- Digital Insurance
+- Financial Services
+- Germany
+- Mobile App
+- Embedded Insurance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +49,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/getsafe-domain-security.yml
 - type: Website
   url: https://www.hellogetsafe.com/
+- type: Blog
+  url: https://www.hellogetsafe.com/en-de/blog
+- type: GitHubOrganization
+  url: https://github.com/getsafe
+- type: TermsOfService
+  url: https://www.hellogetsafe.com/en-de/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.hellogetsafe.com/en-de/data-protection
+- type: Login
+  url: https://link.hellogetsafe.com/home
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
